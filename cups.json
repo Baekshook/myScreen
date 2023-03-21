@@ -1,0 +1,15 @@
+{
+  "name": "cups",
+  "description": "Welcome to cupsWorld!",
+  "number": "8420",
+  "attribution": [
+    {
+      "trait type": "BackGround",
+      "value": "Aquamarine"
+    },
+    {
+      "trait type": "BackGround",
+      "value": "DarkGray"
+    }
+  ]
+}
