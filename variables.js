@@ -1,5 +1,18 @@
-const name = "Eunchan Ko";
+const TRUE = true;
+const FALSE = false;
 
-name = "Ko";
+// && AND
+console.log(TRUE && TRUE);
+console.log(TRUE && FALSE);
+console.log(FALSE && TRUE);
+console.log(FALSE && FALSE);
 
-console.log(name);
+// || OR
+console.log(TRUE || TRUE);
+console.log(TRUE || FALSE);
+console.log(FALSE || TRUE);
+console.log(FALSE || FALSE);
+
+// ! NOT
+console.log(!TRUE);
+console.log(!FALSE);
