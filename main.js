@@ -1,3 +1,15 @@
+function getYear() {
+  const year = document.querySelector(".year");
+  const newDate = new Date();
+
+  const dates = String(newDate.getDate()).padStart(2, "0");
+  const months = String(newDate.getMonth() + 1).padStart(2, "0");
+  const years = String(newDate.getFullYear());
+
+  //   time.innerText = hours + ":" + minutes + ":" + seconds;
+  year.innerHTML = `${years}년 ${months}월 ${dates}일`;
+}
+
 function getTime() {
   const time = document.querySelector(".time");
   const newDate = new Date();
@@ -12,9 +24,10 @@ function getTime() {
   }
 
   //   time.innerText = hours + ":" + minutes + ":" + seconds;
-  time.innerText = `${hours}:${minutes}:${seconds}`;
+  time.innerHTML = `${hours}:${minutes}:${seconds}`;
 }
 
+getYear();
 getTime();
 setInterval(getTime, 1000);
 

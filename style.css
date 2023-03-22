@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "KCCChassam";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCCChassam.woff2") format("woff2");
+  font-family: "Cafe24ClassicType-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Cafe24ClassicType-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -28,12 +28,20 @@ main {
   justify-content: center;
   align-items: center;
 }
+main .currentTime {
+  font-family: "Cafe24ClassicType-Regular";
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+main .year {
+  font-family: "Cafe24ClassicType-Regular";
+  font-size: 20px;
+  margin-bottom: 10px;
+}
 main .time {
-  font-family: "KCCChassam";
+  font-family: "Cafe24ClassicType-Regular";
   font-size: 60px;
-  border: 4px groove rgb(12, 12, 82);
-  border-radius: 20px;
-  padding: 12px 24px;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 20px rgb(238, 150, 8), 0 0 20px rgb(238, 150, 8), 0 0 92px rgb(238, 150, 8), 0 0 100px rgb(238, 150, 8), 0 0 151px rgb(238, 150, 8);
 }
 
 /*# sourceMappingURL=style.css.map */
