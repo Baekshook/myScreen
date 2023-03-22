@@ -1,31 +1,20 @@
-const chains = [
-  "mainnet",
-  "polygon",
-  "avalanche",
-  "arbitrum",
-  "gnosis",
-  "bsc",
-  "optimism",
-  "fantom",
-];
+function add() {
+  console.log(2 + 3);
+}
 
-console.log(chains);
-console.log(chains[0]);
+function sub() {
+  console.log(3 - 1);
+}
 
-const Mainchains = [
-  { name: "mainnet", chainId: 1 },
-  { name: "polygon", chainId: 137 },
-  { name: "avalanche", chainId: 43114 },
-  { name: "arbitrum", chainId: 42161 },
-  { name: "gnosis", chainId: 100 },
-  { name: "bsc", chainId: 56 },
-  { name: "optimism", chainId: 10 },
-  { name: "fantom", chainId: 250 },
-];
+function mul() {
+  console.log(2 * 3);
+}
 
-console.log(Mainchains);
-console.log(Mainchains[0]);
+function div() {
+  console.log(2 / 3);
+}
 
-// 여전히 const 임에도 불구하고 접근이 가능한 문제가 남아있습니다.
-// chains[0].name = "hackednet";
-// console.log(chains[0]);
+add();
+sub();
+mul();
+div();
