@@ -14,7 +14,12 @@ body {
 
 main {
   position: fixed;
-  z-index: 2;
+  z-index: 2; // 레이어 정렬
   width: 100vw;
   height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
