@@ -1,19 +1,14 @@
-const block = "블";
-const bble = "쁠";
-const chain = "체";
-const school = "스";
+let blockchainScore = 20;
+let frontendScore = 30;
 
-let rightWord = block + chain + school;
+let totalScore = blockchainScore + frontendScore;
 
-if (rightWord === "블체스") {
-  console.log("블체스 화이팅!");
-} else if (rightWord === "블록체인") {
-  console.log("블체스 1기");
+if (totalScore >= 78) {
+  console.log("Great!");
+} else if (totalScore >= 50) {
+  console.log("Good");
+} else if (totalScore > 30) {
+  console.log("Try harder");
 } else {
-  console.log("블체스 3기");
+  console.log("Sad ..........");
 }
-
-console.log(1 == 1);
-console.log(1 === 1);
-console.log(1 == "1"); // true type이 달라도 값만 같으면 true
-console.log(1 === "1"); // false type, 값 둘다 같아야 true
