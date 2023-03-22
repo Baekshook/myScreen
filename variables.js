@@ -1,20 +1,20 @@
-function add() {
-  console.log(2 + 3);
+function add(a, b) {
+  console.log(a + b);
 }
 
-function sub() {
-  console.log(3 - 1);
+function sub(a, b) {
+  console.log(a - b);
 }
 
-function mul() {
-  console.log(2 * 3);
+function mul(a, b) {
+  console.log(a * b);
 }
 
-function div() {
-  console.log(2 / 3);
+function div(a, b) {
+  console.log(a / b);
 }
 
-add();
-sub();
-mul();
-div();
+add(2, 3);
+sub(5,9);
+mul(7,5);
+div(10,2);
