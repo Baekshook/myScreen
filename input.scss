@@ -51,4 +51,27 @@ main {
       0 0 92px rgb(238, 150, 8), 0 0 100px rgb(238, 150, 8),
       0 0 151px rgb(238, 150, 8);
   }
+
+  .quotes {
+    position: relative;
+    font-size: 60px;
+
+    .quotesAddBtn {
+      display: none;
+      position: absolute;
+      top: 50px;
+      left: 50%;
+      transform: translate(50%, -50);
+    }
+
+    &:hover {
+      .quotesAddBtn {
+        display: inline-block;
+      }
+    }
+  }
+
+  .newQuotes {
+    display: none;
+  }
 }

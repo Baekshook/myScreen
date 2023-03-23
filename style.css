@@ -43,5 +43,22 @@ main .time {
   font-size: 60px;
   text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 20px rgb(238, 150, 8), 0 0 20px rgb(238, 150, 8), 0 0 92px rgb(238, 150, 8), 0 0 100px rgb(238, 150, 8), 0 0 151px rgb(238, 150, 8);
 }
+main .quotes {
+  position: relative;
+  font-size: 60px;
+}
+main .quotes .quotesAddBtn {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translate(50%, -50);
+}
+main .quotes:hover .quotesAddBtn {
+  display: inline-block;
+}
+main .newQuotes {
+  display: none;
+}
 
 /*# sourceMappingURL=style.css.map */
