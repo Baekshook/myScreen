@@ -82,3 +82,37 @@ function onClickRegist() {
   newQuotes.style.display = "none";
   newQuotesInput.value = "";
 }
+
+let isLoading = false;
+
+async function onClickSearch() {
+  const searchInput = document.querySelector(".searchInput");
+  const searchResult = document.querySelector(".searchResult");
+  if (!searchInput.value) return alert("값을 입력해주세요!");
+  if (isLoading) return alert("로딩중입니다.");
+
+  isLoading = true;
+  const question = searchInput.value;
+  searchInput.value = "검색 중 입니다... 잠시만 기다려주세요!";
+
+  const response = await axios.post(
+    "https://holy-fire-2749.fly.dev/chat",
+    {
+      question,
+      // question: question, -> key, value가 같으면 그냥 question, 으로만 적어도 됨
+    },
+    {
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: "Bearer BLOCKCHAINSCHOOL3",
+      },
+    }
+  );
+  if (response.status === 200) {
+    searchResult.style.display = "inline";
+    searchResult.innerText = response.data.choices[0].message.content;
+  }
+
+  searchInput.value = "";
+  isLoading = false;
+}
