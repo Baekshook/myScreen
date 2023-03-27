@@ -84,17 +84,22 @@ main {
     display: none;
   }
 
+  .searchLogo {
+    width: 32px;
+    height: 32px;
+    margin-top: 30px;
+
+    animation: spin 20s linear infinite;
+  }
+  .spanGPT {
+    font-size: 20px;
+    // margin-bottom: 2000px;
+  }
   .aqua {
     fill: rgb(173, 247, 247);
   }
 
   .search {
-    .searchLogo {
-      width: 32px;
-      height: 32px;
-
-      animation: spin 20s linear infinite;
-    }
   }
 
   .searchResult {
