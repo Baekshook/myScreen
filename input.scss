@@ -101,5 +101,52 @@ main {
     display: none;
   }
 
+  .nft {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 24px;
 
+    img {
+      width: 150px;
+      height: 150px;
+    }
+
+    .nftHover {
+      position: absolute;
+      display: none;
+      width: 150px;
+      height: 150px;
+      background-color: rgba(0, 0, 0, 0.5);
+      top: 0;
+      left: 0;
+
+      a {
+        color: white;
+      }
+      button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: -8px;
+        border-radius: 9999px;
+        width: 24px;
+        height: 24px;
+      }
+    }
+    &:hover {
+      .nftHover {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+  .nftView {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 24px;
+    display: none;
+  }
 }
