@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  color: rgb(22, 22, 22);
+}
+
+.bgVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+main {
+  position: fixed;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  color: blanchedalmond;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .time {
+  padding: 12px 24px;
+  font-size: 100px;
+}
+main .quotes {
+  position: relative;
+  font-size: 40px;
+}
+main .quotes .quotesAddBtn {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+main .quotes .deleteButton {
+  display: none;
+  position: absolute;
+  top: 80%;
+  right: 80%;
+  transform: translate(50%, -50%);
+}
+main .quotes:hover .quotesAddBtn {
+  display: inline-block;
+}
+main .quotes:hover .deleteButton {
+  display: inline-block;
+}
+main .newQuotes {
+  display: none;
+}
+main .nft {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 0px;
+}
+main img {
+  width: 180px;
+  height: 180px;
+}
+main .nftHover {
+  position: absolute;
+  display: none;
+  width: 256px;
+  height: 256px;
+  top: 0;
+  left: 0;
+  background-color: rgb(22, 22, 22);
+}
+main a {
+  color: white;
+}
+main button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 9999px;
+  width: 24px;
+  height: 24px;
+}
+main .nft {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 0px;
+}
+main img {
+  width: 180px;
+  height: 180px;
+}
+main .nftHover {
+  position: absolute;
+  display: none;
+  width: 256px;
+  height: 256px;
+  top: 0;
+  left: 0;
+  background-color: rgb(22, 22, 22);
+}
+main a {
+  color: white;
+}
+main button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 9999px;
+  width: 24px;
+  height: 24px;
+}
+main:hover .nftHover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .nftView {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 24px;
+  display: none;
+}

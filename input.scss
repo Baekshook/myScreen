@@ -68,13 +68,25 @@ main {
     .quotesAddBtn {
       display: none;
       position: absolute;
-      top: 50px;
-      left: 50%;
+      top: 80px;
+      right: 50%;
+      transform: translate(70%, -20);
+    }
+
+    .quotesDelBtn {
+      display: none;
+      position: absolute;
+      top: 80px;
+      left: 60%;
       transform: translate(50%, -50);
     }
 
     &:hover {
       .quotesAddBtn {
+        display: inline-block;
+      }
+
+      .quotesDelBtn {
         display: inline-block;
       }
     }
@@ -97,9 +109,6 @@ main {
   }
   .aqua {
     fill: rgb(173, 247, 247);
-  }
-
-  .search {
   }
 
   .searchResult {
@@ -133,10 +142,10 @@ main {
         position: absolute;
         top: 0;
         right: 0;
-        margin: -8px;
         border-radius: 9999px;
         width: 24px;
         height: 24px;
+        margin: -8px;
       }
     }
     &:hover {

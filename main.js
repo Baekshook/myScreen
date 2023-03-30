@@ -78,9 +78,19 @@ function onClickRegist() {
 
   localStorage.setItem(QUOTES, JSON.stringify(quotesArray));
 
-  quotesMsg.innerHTML = `<span style="color:red;">${newQuotesInput.value}</span>`;
+  quotesMsg.innerHTML = `<span style="color:white;">${newQuotesInput.value}</span>`;
   newQuotes.style.display = "none";
   newQuotesInput.value = "";
+}
+
+function onClickDelete() {
+  const newQuotesInput = document.querySelector(".newQuotesInput");
+
+  let saveQuotes = localStorage.getItem(QUOTES);
+  let quotesArray = JSON.parse(saveQuotes);
+  quotesArray.pop(newQuotesInput.value);
+
+  localStorage.setItem(QUOTES, JSON.stringify(quotesArray));
 }
 
 let isLoading = false;
@@ -129,3 +139,26 @@ function onClickToggle(value) {
     nftView.style.display = "inline-block";
   }
 }
+
+const WEATHER_API = "89b2830e7e8f6b12565590fa56e98826";
+document.write('<script src="key.js"></script>');
+const weatherIcon = document.querySelector(".weatherIcon");
+const weatherTemp = document.querySelector(".weatherTemp");
+
+navigator.geolocation.getCurrentPosition(
+  (position) => {
+    const lat = position.coords.latitude;
+    const lon = position.coords.longitude;
+    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${WEATHER_API}&units=metric`;
+
+    fetch(url)
+      .then((response) => response.json())
+      .then((data) => {
+        weatherTemp.innerText =
+          data.name + "," + parseInt(data.main.temp) + "℃";
+
+        weatherIcon.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+      });
+  },
+  () => alert("Not allowed!")
+);
